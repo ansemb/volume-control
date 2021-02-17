@@ -1,0 +1,45 @@
+QWidget {
+    color: #ffffff;
+    background-color: #121212;
+    selection-background-color:#121212;
+    selection-color: #121212;
+    background-clip: border;
+    border-image: none;
+    border: 0px transparent black;
+    outline: 0;
+}
+
+QWidget:item:hover {
+    background-color: #3daee9;
+    color: #eff0f1;
+}
+
+QWidget:item:selected {
+    background-color: #3daee9;
+}
+
+QSlider::groove:vertical {
+    background: red;
+    position: absolute; /* absolutely position 4px from the left and right of the widget. setting margins on the widget should work too... */
+    left: 0px; right: 0px;
+}
+
+QSlider::handle:vertical {
+    height: 10px;
+    background: white;
+    margin: 0 -4px; /* expand outside the groove */
+}
+
+QSlider::add-page:vertical {
+    background: #515B6A;
+}
+
+QSlider::sub-page:vertical {
+    background: #6A6A6A;
+}
+
+QLabel
+{
+    border: 0ex solid black;
+    font-size: 10.5pt;
+}
